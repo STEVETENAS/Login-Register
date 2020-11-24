@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)),url(dd.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.FormBox{
+    width: 450px;
+    height: 870px;
+    position: relative;
+    margin: 1% auto;
+    /* margin-left: 50%; */
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.ButtonBox{
+    width: 100%;
+    margin: 25px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.ToggleBtn{
+    padding: 10px 75px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-size: 20px;
+
+}
+
+#Btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.SocialIcons{
+    margin: 30px auto;
+    text-align: center; 
+}
+
+.SocialIcons img{
+    width: 40px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 0 rgb(75, 81, 116);
+    cursor: pointer;
+    border-radius: 40%;
+}
+.SocialIcons img:hover{
+    width: 50px;
+}
+
+.InputGroup{
+    top: 250px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    
+}
+.InputGroup1{
+    top: 160px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.InputField{
+    width: 100%;
+    padding: 10px 0;
+    margin: 50px 15%;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #9999;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+}
+.InputField1{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 15%;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #9999;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+}
+
+.SubmitBtn{
+    width: 85%;
+    padding: 15px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-size: 30px;
+    margin-left: 21%;
+}
+.SubmitBtn:hover{
+    background: linear-gradient(to left, #ff105f,#ffad06);
+    color: #fff;
+}
+
+.CheckBox{
+    margin: 50px 30px 20px;
+}
+
+span{
+    color: #777;
+    font-size: 18px;
+    bottom: 85px;
+    position: absolute;
+}
+
+#Login{
+    left: 50px;
+}
+
+#Register{
+    left: 550px;
+}
+
+#User{
+    border-radius: 60%;
+    width: 80px;
+    height: 80px;
+    margin: 0px 150px;
+}

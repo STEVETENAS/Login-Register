@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Tena$ Log in</title>
+</head>
+<body>
+    <div class="Hero">
+        <div class="FormBox">
+            <div class="ButtonBox">
+                <div id="Btn"></div>
+                <button type="button" class="ToggleBtn" onclick="Login()">Log In</button>
+                <button type="button" class="ToggleBtn" onclick="Register()">Register</button>
+            </div>
+            <div class="SocialIcons">
+                <!-- <a href="index.html"><img src="images/google.png"></a> -->
+                <a href="https://www.google.com/" target="_blank"><img src="google.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="twitter.png"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="instagram.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="linkedin.png"></a>
+            </div>
+            <form id="Login" class="InputGroup">
+                <input type="text" class="InputField" placeholder="User ID" required>
+                <input type="password" class="InputField" placeholder="Password" required>
+                <input type="checkbox" class="CheckBox"><span>Remember Password</span>
+                <button type="submit" class="SubmitBtn">Log In</button>
+            </form>
+            <form id="Register" class="InputGroup1">
+                <img src="user.jpeg" id="User" onclick="OpenFile()">
+                <input type="file" id="img-f" name="img" accept="image/*" class="InputField1" hidden>              
+
+                <input type="text" class="InputField1" placeholder="FIRST NAME" required>
+                <input type="text" class="InputField1" placeholder="LAST NAME" required>
+                <input type="email" class="InputField1" placeholder="EMAIL" required>
+                <select class="InputField" >
+                    <option>+237</option>
+                    <option>+982</option>
+                    <option>+1</option>
+                    <option>+44</option>
+                    <option>+52</option>
+                    <option>+91</option>
+                    <option>+86</option>
+                    <option>+43</option>
+                    <option>+32</option>
+                    <option>+33</option>
+                </select>
+                <input type="Phone" class="InputField1" placeholder="TELEPHONE NUMBER" required>
+                <input type="password" class="InputField1" placeholder="PASSWORD" required>
+                <input type="password" class="InputField1" placeholder="CONFIRM PASSWORD" required>
+                <input type="checkbox" class="CheckBox"><span>I agree to the terms and condition</span>
+                <button type="submit" class="SubmitBtn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("Login");
+        var y = document.getElementById("Register");
+        var z = document.getElementById("Btn");
+
+        function Register(){
+            x.style.left = "-500px";
+            y.style.left = "50px";
+            z.style.left = "200px";
+        } 
+        function Login(){
+            x.style.left = "50px";
+            y.style.left = "550px";
+            z.style.left = "0";
+        }
+
+        const imgbtn = document.getElementById("img-f");
+        const imgUser = document.getElementById("User");
+
+        imgUser.addEventListener("click", function(){
+            imgbtn.click();
+        });
+
+        imgbtn.addEventListener("change", function(){
+            const choosedFile = this.files[0];
+
+if (choosedFile) {
+
+    const reader = new FileReader(); //FileReader is a predefined function of JS
+
+    reader.addEventListener('load', function(){
+        imgUser.setAttribute('src', reader.result);
+    });
+
+    reader.readAsDataURL(choosedFile);
+    }
+        });
+
+    </script>
+</body>
+</html>
